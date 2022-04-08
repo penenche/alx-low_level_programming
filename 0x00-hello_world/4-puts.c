@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * main -prints the phrase "Programming is like building a multilingual puzzle"
- *eturn: o if exited properly, non-zero otherwise
+ *Return: Always 0
  */
 int main(void)
 {
