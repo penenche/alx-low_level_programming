@@ -7,6 +7,7 @@
 */
 int main(void)
 {
+	putchar('_');
 	putchar('P');
 	putchar('U');
 	putchar('T');
@@ -14,7 +15,6 @@ int main(void)
 	putchar('H');
 	putchar('A');
 	putchar('R');
-	putchar('\n');
-	
+	putchar('\n');	
 	return (0);
 }
