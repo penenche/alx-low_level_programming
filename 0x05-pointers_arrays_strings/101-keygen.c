@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	int pass[100]
+	int pass[100];
 	int i, sum, n;
 
 	sum = 0;
@@ -25,6 +25,7 @@ int main(void)
 			n = 2772 - sum - '0';
 			sum += n;
 			putchar(n + '0');
+			breah;
 		}
 	}
 	return (0);
