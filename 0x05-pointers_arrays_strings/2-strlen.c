@@ -4,7 +4,7 @@
  * @s: string to evaluate
  * Return: Always 0
  */
-int_strlen(char *s)
+int _strlen(char *s)
 {
 	int i;
 	i = 0;
