@@ -5,7 +5,6 @@
  * @dest: destination string
  * @src: source string
  * @n: number of bytes to copy
- *
  * Return: pointer to the resultin string
  */
 char *_strncat(char *dest, char *src, int n)
@@ -16,7 +15,7 @@ char *_strncat(char *dest, char *src, int n)
 
 	while (src[i] != '\0' && i < n)
 	{
-		dest[i] = src[];
+		dest[i] = src[i];
 		i++;
 	}
 	while (i < n)
