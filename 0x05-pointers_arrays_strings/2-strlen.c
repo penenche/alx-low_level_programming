@@ -1,20 +1,16 @@
 #include <stdio.h>
 /**
  * _strlen- returns the length of a string
- * @s: string to evaluate
- * Rturn: Always 0 (Success)
+ * @s: input stringturn
+ * Rturn: length of a string
  */
 int _strlen(char *s)
 
 {
-	int i;
+	int count = 0;
 
-	i = 0;
 
-	while (s[i] != '\0')
-
-	{
-		i++;
-	}
-	return (i);
+	while (*(s + count) != '\0')
+		count++;
+	return (count);
 }
