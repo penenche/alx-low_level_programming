@@ -7,21 +7,22 @@
  * @n: number of bytes to copy
  * Return: Always 0 (Success)
  */
-char *_strncat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n);
 {
-	int i;
+	int count = 0, count2 = 0;
 
-	i = 0;
-
-	while (src[i] != '\0' && i < n)
+	while (*(dest + count) != '\0')
 	{
-		dest[i] = src[i];
-		i++;
+		count++;
 	}
-	while (i < n)
+
+	while (count2 < n)
 	{
-		dest[i] = '\0';
-		i++;
+		*(dest + count) = *(src + count2);
+		if (*(src + count2) == '\0')
+			break;
+		count++;
+		count2++;
 	}
 	return (dest);
 }
