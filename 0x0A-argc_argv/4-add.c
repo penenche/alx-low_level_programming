@@ -1,41 +1,37 @@
-#include "main.h"
-
 #include <stdio.h>
 
 #include <stdlib.h>
 
+#include <ctype.h>
+
 /**
- * main - add 2 positive numbers and print the result
- * @argc: argument count
- * @argv: argument vector, array of strings
- * Description: If no number is passed to program, print 0
- * If one of the numbers contain non-digits, print Error
- * Return: 1 if error, 0 if function runs properly
+ * main - adds positive numbers
+ * @argc: number of command line arguments
+ * @argv: array that contains the program command line arguments
+ * Return: 0 - success
  */
 
 int main(int argc, char *argv[])
 
 {
-	int total, i;
-	char *p;
-	int num;
+	int i, j, add = 0;
 	
-	total = 0;
-	if (argc > 1)
+	for (i = 1; i < argc; i++)
 	{
-		for (i = 1; argv[i]; i++)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			num = strtol(argv[i], &p, 10);
-			if (!*p)
-				total += num;
-			else
+			if (!isdigit(argv[i][j]))
 			{
 				printf("Error\n");
 				
 				return (1);
+			
 			}
 		}
+		add += atoi(argv[i]);
 	}
-	printf("%d\n", total);
+	printf("%d\n", add);
+	
 	return (0);
+
 }
