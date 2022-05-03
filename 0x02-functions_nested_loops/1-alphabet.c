@@ -2,7 +2,10 @@
 
 /**
  * Print_alphabet- prints the alphabet in lowercase
+ *
+ * Return: void
  */
+
 void Print_alphabet(void)
 {
 	int i;
@@ -11,7 +14,6 @@ void Print_alphabet(void)
 
 	{
 		_putchar(i);
-		ch++;
 	}
 	_putchar('\n');
 }
