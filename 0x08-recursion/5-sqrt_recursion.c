@@ -3,7 +3,6 @@
 /**
  * power_operation - returns the natural square root of a number
  * @n: number to calculate the square root of
- * 
  * Return: square root or -1
  */
 
@@ -23,7 +22,6 @@ int power_operation(int n, int c)
  * square root of a number
  * @n: number to calculate the square root of
  * @i: iterator
- *
  * Return: the resulting square root
  */
 int _sqrt_recursion(int n)
