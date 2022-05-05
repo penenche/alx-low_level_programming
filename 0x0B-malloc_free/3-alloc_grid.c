@@ -8,7 +8,6 @@
  * @height: height of the array
  * Return: pointer of an array of integers
  */
-
 int **alloc_grid(int width, int height)
 {
 	int **arr;
@@ -38,5 +37,4 @@ int **alloc_grid(int width, int height)
 		}
 	}
 	return (arr);
-}
-	
+}	
