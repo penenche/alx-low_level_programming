@@ -34,6 +34,8 @@ char *argstostr(int ac, char **av)
 			str[k] = av[i][j];
 			k++;
 		}
+		str[k] = '\n';
+		k++;
 	}
 	return (str);
 }
