@@ -4,8 +4,6 @@
 
 #include <stdlib.h>
 
-#include <limits.h>
-
 /**
  * malloc_checked - allocates memory
  * @b: amount of bytes
