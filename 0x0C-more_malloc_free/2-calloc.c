@@ -4,7 +4,7 @@
 
 /**
  * *_calloc - a function that allocates memory for an array
- * using malloc
+ * using malloca
  * @nmemb: number of elements
  * @size: size of bytes
  */
@@ -22,5 +22,3 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		p[i] = 0;
 	return (p);
 }
-
-
